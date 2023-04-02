@@ -17,3 +17,22 @@ algumas telas, para chegar no metodo que chamaria essa função, atravez de test
 
 Agora uma reflexão é que testes não são uma formula magica, talvez não seja interessante aplicar testes em produtos incertos ou imaturos, quando temos certeza do sucesso do produto, é ideal que façamos testes, quando estamos apenas criando algo como teste talvez não tenha tanta valia testar algo que talvez nem chegue a ser usado, e em sistemas maiores talvez o interessante seria testar apenas aquilo que levaria um tempo maior testando manualmente.
 
+Tipos de teste
+
+Testes Unitários
+
+Testam um componente *ISOLADO*, sem recursos externos, ex.: arquivo do sistema, banco de dados, endpoint de uma api. 
+
+> exemplo:
+>
+>export class VoteComponent {
+>    totalVotes: number;
+>
+>    upVote(){
+>        this.totalVotes++;
+>    }
+>}
+>
+>{{ TotalVotes }}
+>
+><button (click)="upVote()">UP</button> 
