@@ -16,10 +16,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'mosh-reboot'`, () => {
+  it(`should have as title 'Testes-Unitarios'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('mosh-reboot');
+    expect(app.title).toEqual('Testes-Unitarios');
   });
 
   it('should render title', () => {
@@ -27,7 +27,7 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content').textContent).toContain(
-      'mosh-reboot app is running!'
+      'Testes-Unitarios app is running!'
     );
   });
 });

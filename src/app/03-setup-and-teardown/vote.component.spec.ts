@@ -12,14 +12,14 @@ describe('VoteComponent', () => {
   beforeEach(() => {
     component = new VoteComponent();
   });
-  it('should increment totalVotes when upvoted', () => {
+  it('deve incrementar totalVotes quando upvoted', () => {
     // Act - calling a function
     component.upVote();
     // Assertion
     expect(component.totalVotes).toBe(1);
   });
 
-  it('should decrement totalVotes when downvoted', () => {
+  it('deve decrementar totalVotes quando downvoted', () => {
     // Act - calling a function
     component.downVote();
     // Assertion

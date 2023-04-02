@@ -6,11 +6,11 @@ import { compute } from './compute';
  */
 
 describe('compute', () => {
-  it('should return 0 if input is negative', () => {
+  it('deve returnar 0 se a entrada for negativa', () => {
     const result = compute(-1);
     expect(result).toBe(0);
   });
-  it('should increment the input if it is positive', () => {
+  it('deve incrementar 1 se o valor for positivo', () => {
     const result = compute(1);
     expect(result).toBe(2);
   });

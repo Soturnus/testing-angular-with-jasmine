@@ -1,7 +1,7 @@
 import { greet } from './greet';
 
 describe('greet', () => {
-  it('should include the name in the message', () => {
-    expect(greet('mosh')).toContain('mosh');
+  it('deve retornar o nome inserido no input', () => {
+    expect(greet('Rivaldo')).toContain('Rivaldo');
   });
 });
