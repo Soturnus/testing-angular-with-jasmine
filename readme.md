@@ -1,38 +1,31 @@
-"Our job is to build and deliver real working software, our job is to deliver value to world"
+# TestingDemo
 
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
-Anotações e pensamentos sob estudo de testes em Angular
+## Development server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Automação de teste é o uso de software para controlar a execução do teste de software, a comparação dos resultados esperados com os resultados reais, a configuração das pré-condições de teste e outras funções de controle e relatório de teste.
+## Code scaffolding
 
-function calculate(input) {
-    if (x) return ...;
-    else if (y) return ...;
-    return ...;
-}
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-acima temos um exemplo de uma função que calcularia o retorno de um valor dependendo da entrada do dado na função, sem 
-teste automatizado poderia levar até minutos para testar pois em muitos casos precisariamos fazer login na aplicação, acessar
-algumas telas, para chegar no metodo que chamaria essa função, atravez de testes poderiamos testar essa função apenas chamando calculate(x), calculate(y) diretamente, o que reduziria o tempo para testarmos o codigo. 
+## Build
 
-Agora uma reflexão é que testes não são uma formula magica, talvez não seja interessante aplicar testes em produtos incertos ou imaturos, quando temos certeza do sucesso do produto, é ideal que façamos testes, quando estamos apenas criando algo como teste talvez não tenha tanta valia testar algo que talvez nem chegue a ser usado, e em sistemas maiores talvez o interessante seria testar apenas aquilo que levaria um tempo maior testando manualmente.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-Tipos de teste
+## Running unit tests
 
-Testes Unitários
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Testam um componente *ISOLADO*, sem recursos externos, ex.: arquivo do sistema, banco de dados, endpoint de uma api. 
+## Running end-to-end tests
 
-> exemplo:
->
->export class VoteComponent {
->    totalVotes: number;
->
->    upVote(){
->        this.totalVotes++;
->    }
->}
->
->{{ TotalVotes }}
->
-><button (click)="upVote()">UP</button> 
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Deploying to GitHub Pages
+
+Run `ng github-pages:deploy` to deploy to GitHub Pages.
+
+## Further help
+
+To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
